@@ -1,0 +1,128 @@
+$main-color: #4dad32;
+ion-content {
+	background: #ececec !important;
+}
+ion-header:before { 
+	content: none;
+}
+
+
+@media (min-width: 600px) {
+	
+		ion-header:before {
+			content: url(../assets/images/logo.svg);
+			//background: #fff;
+			//border-radius: 999px;
+			width: 190px;
+			height: 80px;
+			position: absolute;
+			top: 10px;
+			left: 5px;
+			z-index: 99;
+			//box-shadow: 0px 4px 3px #bebebe;
+		}
+		ion-header {
+			//position: relative;
+			//top: 0px !important; 
+			.toolbar-title {
+				height: 48px;
+				
+				span:nth-of-type(1) {
+					font-family: 'arciform_sansregular' !important;
+					font-weight: normal !important;
+
+					color: mix(#000, $main-color, 40%);
+					padding-left: 190px;
+					font-size: 20px;
+					position: relative;
+					top: 22px;
+					z-index: 99;
+				}
+				span:nth-of-type(2) {
+					
+					font-weight: normal !important;
+					color: #777;
+					padding-left: 2px;
+					font-size: 18px;
+					position: relative;
+					top: 21px;
+					z-index: 99;
+				}
+			}
+		}
+
+		.scroll-content {
+			margin-bottom: 0px !important;
+			//padding-left: 5% !important;
+			padding-left: 130px !important;
+			padding-right: 5% !important;
+			padding-top: 38px !important;
+		}
+		ion-fab[right] {
+		    right: 30px;
+		    bottom: 120px;
+    		
+		}
+		.tabbar {
+			justify-content: center;
+			bottom: 15px !important;
+			background: transparent !important;
+			position: static;
+		}
+		.tabs-ios .tabbar {
+		    
+		    border-top: none;
+		   
+		}
+		.tabbar > *{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		.tabbar:before {
+			content: none !important;
+		}
+		
+		.tab-button {
+			width: 80px;
+			height: 80px;
+			background: #fff;
+			flex: initial;
+			border-radius: 999px;
+			color: #863638;
+			border-radius: 999px;
+			box-shadow: 0px 3px 5px #999;
+			position: absolute;
+			left: 0px !important;
+			z-index: 99;
+			ion-icon {
+				font-size: 33px !important;
+			}
+		}
+		#tab-t0-0 {
+			top: 100px;
+		}
+		#tab-t0-1 {
+			top: 200px;
+		}
+		#tab-t0-2 {
+			top: 300px;
+		}
+		.tab-button-text {
+
+		    font-size: 1.1rem !important;
+		}
+		
+		.tab-button[aria-selected=true] {
+		    
+		    color: #fff !important;
+		    background: $main-color;
+		}
+		.tab-button[aria-selected=true] .tab-button-icon {
+		    color: #fff !important;
+		}
+		
+		ion-modal .scroll-content {
+			margin-bottom: 0px !important;
+		}
+	
+}
